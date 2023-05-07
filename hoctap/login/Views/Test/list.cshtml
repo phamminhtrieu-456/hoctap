@@ -1,0 +1,22 @@
+﻿@model List<login.Controllers.TestController.Article>
+@{
+    Layout = "_layout";
+    ViewData["Title"] = "truyen du lieu";
+}
+<!DOCTYPE html>
+
+<html>
+<table class="table">
+    <tr>
+        <th>name</th>
+        <th>phone</th>
+        <th>age</th> 
+    </tr>
+    @foreach (var Article in Model){
+        <tr>
+            <td>@Article.name</td>
+            <td>@Article.phone</td>
+            <td>@Article.age</td>
+        </tr>}
+</table>
+</html>
